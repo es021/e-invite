@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 Vue.config.productionTip = false
 
 //register all component
@@ -39,6 +42,13 @@ console.log(process.env.NODE_ENV);
 new Vue({
   el: '#app',
   router,
+  created() {
+    AOS.init({
+      duration: 1200,
+      easing: 'ease-in-out-back'
+    });
+  },
   components: { App },
   template: '<App/>'
 })
+
