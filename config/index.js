@@ -5,7 +5,8 @@
 const path = require('path')
 
 //@wzs21
-const ROOT_PATH = "e-invite/public";
+//const ROOT_PATH = "e-invite/public";
+const ROOT_PATH = "e-invite/p/zul-waida";
 
 module.exports = {
   dev: {
