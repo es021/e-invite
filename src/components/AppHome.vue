@@ -1,19 +1,7 @@
 
 <template>
 <div>
-
-
-    HTML SCSS JS Result 
-
-EDIT ON
-  
-    
-    
-    
-    
-    
-    
-    
+<a href='whatsapp://send?text=Text to send with message: https://es021.github.io/e-invite/public/index.html'>whatsApp</a>
   
 
 <div class="item item--secondary"
