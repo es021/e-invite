@@ -1,7 +1,9 @@
 
 <template>
 <div id="app-header" class="app-header" v-bind:style="{backgroundImage:backgroundImage}">
-  <div class="header font-lobster">Hello World!</div>
+  <div class="header font-lobster">
+    Fatimah<br>
+    <small>&</small> Ali</div>
 </div>
 </template>
 

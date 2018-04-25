@@ -1,10 +1,19 @@
 @import './define/_constant.scss';
 @import './define/_mixin.scss';
+
+
+
 .app-header {
+  @include flex;
+  @include flex_align(center);
+  font-family: 'Great Vibes';
+  justify-content: center;
   background-size:cover;
   background-position:center center;
-  font-weight:bold;
   font-size : 50px;
-  height: 350px;
-  color:rgba(255,255,255,0.5);
+  letter-spacing: 1px;
+  line-height: 44px;
+  text-shadow: $SHADOW-TEXT;
+  height: 90vh;
+  color:$COLOR-TEXT;
 }

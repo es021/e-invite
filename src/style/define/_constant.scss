@@ -9,7 +9,8 @@ $COLOR-BLUE-DARK: #031533;
 $COLOR-GRAY-LIGHT: #edf2f6;
 $COLOR-YELLOW: #FADA0C;
 
-$COLOR-TEXT : #2c3e50;
+$COLOR-TEXT :rgba(0,0,0,0.35);
+$SHADOW-TEXT : 4px 8px 10px rgba(255, 255, 255, 1); // cast white glow effect
 
 /* Dimension */
 $HEADER-HEIGHT: 75px;
