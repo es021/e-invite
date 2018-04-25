@@ -9,3 +9,7 @@ export const AppPath = {
     Dataset: AppRoot + "/dataset"
 };
 
+export const AppImg = {
+    bodyBackground: "pattern.jpg",
+    get: (name) => { return require(`../image/${name}`); }
+};

@@ -1,8 +1,7 @@
 
 <template>
 <div>
-<a href='whatsapp://send?text=Text to send with message: https://es021.github.io/e-invite/public/index.html'>whatsApp</a>
-  
+<h3>Test Aos Page</h3>
 
 <div class="item item--secondary"
      data-aos="fade-right"
@@ -46,7 +45,7 @@
 
 <script>
 export default {
-  name: "AppHome"
+  name: "TestAos"
 };
 </script>
 
