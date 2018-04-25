@@ -1,0 +1,10 @@
+@import './define/_constant.scss';
+@import './define/_mixin.scss';
+.app-header {
+  background-size:cover;
+  background-position:center center;
+  font-weight:bold;
+  font-size : 50px;
+  height: 350px;
+  color:rgba(255,255,255,0.5);
+}

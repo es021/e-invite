@@ -11,5 +11,6 @@ export const AppPath = {
 
 export const AppImg = {
     bodyBackground: "pattern.jpg",
+    header: "banner.jpg",
     get: (name) => { return require(`../image/${name}`); }
 };

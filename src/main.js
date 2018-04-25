@@ -9,13 +9,19 @@ import { AppImg } from './config/app-config';
 import 'aos/dist/aos.css';
 
 Vue.config.productionTip = false
-
 //register all component
-// import JpnHeader from '@/components/JpnHeader'
-// Vue.component('JpnHeader', JpnHeader);
+import AppHeader from '@/components/AppHeader'
+import AppContent from '@/components/AppContent'
+import AppFooter from '@/components/AppFooter'
+import AppShare from '@/components/AppShare'
+
+Vue.component('AppHeader', AppHeader);
+Vue.component('AppContent', AppContent);
+Vue.component('AppFooter', AppFooter);
+Vue.component('AppShare', AppShare);
 
 //import all style
-const scss = ["app"];
+const scss = ["app", "general","header", "footer","share","button"];
 scss.map((d, i) => {
   require(`./style/${d}.scss`);
 })
@@ -36,7 +42,7 @@ new Vue({
       duration: 1200,
       easing: 'ease-in-out-back'
     });
-    
+
     // set body background;
     var body = document.getElementsByTagName("body")[0];
     body.style.background = `url('${AppImg.get(AppImg.bodyBackground)}')`;

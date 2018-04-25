@@ -1,8 +1,8 @@
 
 <template>
 <div>
-  <h3>Test Css Page</h3>
-  <div class="text-clip">Hello World!</div>
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' />
+  <div class="header font-lobster">Hello World!</div>
 </div>
 </template>
 
@@ -13,7 +13,12 @@
 </script>
 
 <style scoped lang="scss">
-  .text-clip {
+
+  .font-lobster{
+    font-family: 'Lobster';
+  }
+
+  .header {
     background: url('https://es021.github.io/e-invite/og-image/banner.jpg');
     background-size:cover;
     background-position:center center;
