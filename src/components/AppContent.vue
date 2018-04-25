@@ -2,27 +2,29 @@
 <template>
 <div id="app-content" class="app-content">
   
-  <div id="intro" class="image-box"
-     v-bind:style="{backgroundImage:backgroundImage2}">
+  <div id="intro" class="section">
      <div data-aos="zoom-in"
         data-aos-anchor="#app-header"
         data-aos-duration="700"
-        data-aos-anchor-placement="bottom-center">
+        data-aos-anchor-placement="center-center">
           <small>Assalamualaikum Warahmatullah Wa Barakahtuh</small>
     </div>
   </div>
 
-  <div id="details" class="image-box" 
-     data-aos="fade-left"
-     data-aos-anchor="#intro"
-     data-aos-anchor-placement="center-top">
-     Event Details
+  <div id="details" class="section">
+     <div class="box-triangle" data-aos="fade-right"
+        data-aos-anchor="#intro"
+        data-aos-duration="800"
+        data-aos-anchor-placement="top-top">
+        <div class="box-text">
+          Details
+        </div>
+    </div>
   </div>
 
-  <div id="map" class="image-box"
-     v-bind:style="{backgroundImage:backgroundImage2}">
+  <div id="map" class="section">
      <div class="box-triangle" data-aos="fade-right"
-        data-aos-anchor="#details"
+        data-aos-anchor="#intro"
         data-aos-duration="800"
         data-aos-anchor-placement="center-top">
         <div class="box-text">
@@ -30,13 +32,17 @@
         </div>
     </div>
   </div>
-
-    <div id="details" class="image-box" 
-     data-aos="fade-left"
-     data-aos-anchor="#intro"
-     data-aos-anchor-placement="center-top">
-     Event Details
-  </div>
+  <!-- <div id="map" class="section"
+     v-bind:style="{backgroundImage:backgroundImage2}">
+     <div class="box-triangle" data-aos="fade-right"
+        data-aos-anchor="#intro"
+        data-aos-duration="800"
+        data-aos-anchor-placement="center-top">
+        <div class="box-text">
+          Location
+        </div>
+    </div>
+  </div> -->
 
 </div>
 </template>
@@ -79,28 +85,29 @@ $IMAGE-BOX-TRI-WIDTH: 100px;
   #intro {
   }
 
-  .box-triangle {
-    @include triangle-left($IMAGE-BOX-HEIGHT
-    , $IMAGE-BOX-WIDTH
-    , $IMAGE-BOX-TRI-WIDTH
-    , rgba(255,255,255, 0.4));
-    color: rgba(0, 0, 0, 0.6);
-    box-sizing: border-box;
-    .box-text {
-      position: absolute;
-      left: -$IMAGE-BOX-WIDTH;
-      padding: 10px;
-    }
-  }
+  // .box-triangle {
+  //   @include triangle-left($IMAGE-BOX-HEIGHT
+  //   , $IMAGE-BOX-WIDTH
+  //   , $IMAGE-BOX-TRI-WIDTH
+  //   , rgba(255,255,255, 0.4));
+  //   color: rgba(0, 0, 0, 0.6);
+  //   box-sizing: border-box;
+  //   .box-text {
+  //     position: absolute;
+  //     left: -$IMAGE-BOX-WIDTH;
+  //     padding: 10px;
+  //   }
+  // }
 
-  .image-box {
-    border-top: $COLOR-TEXT 1px solid;
+  .section {
+    border-top: $COLOR-THEME 2px dotted;
+    padding:10px;
     background: $COLOR-PEACH;
     background-size: cover;
     background-position: center center;
     font-weight: bold;
     font-size: 20px;
-    height: $IMAGE-BOX-HEIGHT;
+    height: 70vh;
     color: $COLOR-TEXT;
   }
 }
