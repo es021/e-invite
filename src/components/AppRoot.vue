@@ -13,6 +13,8 @@
 
 <script>
 export default {
-  name: "Root"
+  name: "Root",
+  created(){
+  }
 };
 </script>

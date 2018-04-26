@@ -31,6 +31,10 @@ css.map((d, i) => {
   require(`./style/css/${d}.css`);
 })
 
+//console.log(anime);
+//require('./lib/anime.js');
+//console.log(anime);
+
 console.log(process.env.NODE_ENV);
 
 /* eslint-disable no-new */
