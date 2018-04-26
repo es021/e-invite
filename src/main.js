@@ -14,14 +14,16 @@ import AppHeader from '@/components/AppHeader'
 import AppContent from '@/components/AppContent'
 import AppFooter from '@/components/AppFooter'
 import AppShare from '@/components/AppShare'
+import ButtonPulse from '@/components/ButtonPulse'
 
 Vue.component('AppHeader', AppHeader);
 Vue.component('AppContent', AppContent);
 Vue.component('AppFooter', AppFooter);
 Vue.component('AppShare', AppShare);
+Vue.component('ButtonPulse', ButtonPulse);
 
 //import all style
-const scss = ["app", "general","header", "footer","share","button"];
+const scss = ["app", "general", "header", "font", "footer", "share", "button"];
 scss.map((d, i) => {
   require(`./style/${d}.scss`);
 })

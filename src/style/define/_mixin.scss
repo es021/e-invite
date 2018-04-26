@@ -13,3 +13,9 @@
     -webkit-align-items: $align;
     align-items: $align;
 }
+
+@mixin flex_center {
+    @include flex;
+    @include flex_align(center);
+    justify-content: center;
+}
