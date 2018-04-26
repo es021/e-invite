@@ -1,11 +1,10 @@
 
 <template>
 <div id="app-content" class="app-content">
-  
   <div id="intro" class="section">
      <div data-aos="zoom-in"
         data-aos-anchor="#app-header"
-        data-aos-duration="700"
+        data-aos-duration="800"
         data-aos-anchor-placement="center-center">
           <small>Assalamualaikum Warahmatullah Wa Barakahtuh</small>
     </div>
@@ -43,7 +42,6 @@
         </div>
     </div>
   </div> -->
-
 </div>
 </template>
 
@@ -68,22 +66,19 @@ export default {
 
 $COLOR-PEACH: #f0e7d6;
 
-@mixin triangle-left($height, $width,$widthTriangle, $color) {
-  width: 0;
-  height: 0;
-  border-bottom: $height solid $color;
-  border-left: $width solid $color;
-  border-right: $widthTriangle solid transparent;
-}
+// @mixin triangle-left($height, $width,$widthTriangle, $color) {
+//   width: 0;
+//   height: 0;
+//   border-bottom: $height solid $color;
+//   border-left: $width solid $color;
+//   border-right: $widthTriangle solid transparent;
+// }
 
-$IMAGE-BOX-HEIGHT: 300px;
-$IMAGE-BOX-WIDTH: 215px;
-$IMAGE-BOX-TRI-WIDTH: 100px;
+// $IMAGE-BOX-HEIGHT: 300px;
+// $IMAGE-BOX-WIDTH: 215px;
+// $IMAGE-BOX-TRI-WIDTH: 100px;
+
 .app-content {
-  font-family: "Bad Script";
-
-  #intro {
-  }
 
   // .box-triangle {
   //   @include triangle-left($IMAGE-BOX-HEIGHT
@@ -98,6 +93,8 @@ $IMAGE-BOX-TRI-WIDTH: 100px;
   //     padding: 10px;
   //   }
   // }
+
+  font-family: "Bad Script";
 
   .section {
     border-top: $COLOR-THEME 2px dotted;
