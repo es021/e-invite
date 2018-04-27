@@ -1,8 +1,8 @@
 
 <template>
 <div class="pulse-btn-container">
-  <div :id="id" class="pulse-btn">
-    <i :class="`fa fa-${name}`"></i>
+  <div :id="id" class="pulse-btn" v-on:click="onClick">
+    <i :class="`${prefix} fa-${icon}`"></i>
   </div>
   </div>
 </template>
@@ -16,7 +16,7 @@ export default {
     id: {
       type: String
     },
-    name: {
+    icon: {
       type: String,
       default: () => []
     },
@@ -30,7 +30,7 @@ export default {
     },
     onClick: {
       type: Function,
-      default: () => {}
+      default: (ev) => {}
     }
   },
   mounted: function() {

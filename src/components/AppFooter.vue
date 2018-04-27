@@ -11,10 +11,12 @@
 <script>
 export default {
   name: "Footer",
-  data : {
-    year : ""
+  data: () => {
+    return {
+      year: ""
+    };
   },
-  created(){
+  created() {
     var time = new Date();
     this.year = time.getFullYear();
   }

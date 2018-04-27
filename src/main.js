@@ -1,27 +1,32 @@
-// The Vue build version to load with the `import` command
-// (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
 import router from './router'
 import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { AppImg } from './config/app-config';
 
-import 'aos/dist/aos.css';
-
-Vue.config.productionTip = false
+// ######################################################################
 //register all component
-import AppHeader from '@/components/AppHeader'
 import AppContent from '@/components/AppContent'
 import AppFooter from '@/components/AppFooter'
 import AppShare from '@/components/AppShare'
-import ButtonPulse from '@/components/ButtonPulse'
-
-Vue.component('AppHeader', AppHeader);
+import AppScroll from '@/components/AppScroll'
 Vue.component('AppContent', AppContent);
 Vue.component('AppFooter', AppFooter);
 Vue.component('AppShare', AppShare);
+Vue.component('AppScroll', AppScroll);
+
+import ButtonPulse from '@/components/ButtonPulse'
 Vue.component('ButtonPulse', ButtonPulse);
 
+import ContentHeader from '@/components/ContentHeader'
+import ContentIntro from '@/components/ContentIntro'
+import ContentDetails from '@/components/ContentDetails'
+Vue.component('ContentHeader', ContentHeader);
+Vue.component('ContentIntro', ContentIntro);
+Vue.component('ContentDetails', ContentDetails);
+
+// ######################################################################
 //import all style
 const scss = ["app", "general", "header", "font", "footer", "share", "button"];
 scss.map((d, i) => {
@@ -33,13 +38,9 @@ css.map((d, i) => {
   require(`./style/css/${d}.css`);
 })
 
-//console.log(anime);
-//require('./lib/anime.js');
-//console.log(anime);
 
 console.log(process.env.NODE_ENV);
-
-/* eslint-disable no-new */
+Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
