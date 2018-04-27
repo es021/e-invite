@@ -1,10 +1,21 @@
-a{
-  color:white;
-  text-decoration: none;
+a {
+    color: white;
+    text-decoration: none;
 }
-a:hover{
-  opacity: 0.8;
-}    
-a:active{
-  opacity: 1;
-}   
+
+a:hover {
+    opacity: 0.8;
+}
+
+a:active {
+    opacity: 1;
+}
+
+.fa.left,
+.fab.left {
+    margin-right: 5px;
+}
+
+.text-muted {
+    opacity: 0.7;
+}

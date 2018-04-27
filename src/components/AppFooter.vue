@@ -1,10 +1,12 @@
 
 <template>
   <div class="app-footer">
+  <div class="footer-copyright">
       © {{year}} YouAreInvited
       <!-- <router-link to="/">Home</router-link>
       <router-link to="/test-css">Test Css</router-link>
       <router-link to="/test-aos">Test Aos</router-link> -->
+  </div>
   </div>
 </template>
 

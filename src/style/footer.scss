@@ -1,15 +1,17 @@
 @import './define/_constant.scss';
 @import './define/_mixin.scss';
-.app-footer{
-    @include flex;
-    @include flex_align(center);
-    justify-content: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    padding: 7px;
-    font-size: 13px;
-    background:rgba(0,0,0,0.3);
-    color: whitesmoke;
+.app-footer {
+    .footer-copyright {
+        @include flex;
+        @include flex_align(center);
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        padding: 7px;
+        font-size: 13px;
+        background: rgba(0, 0, 0, 0.3);
+        color: whitesmoke;
+    }
 }

@@ -17,14 +17,20 @@ Vue.component('AppShare', AppShare);
 Vue.component('AppScroll', AppScroll);
 
 import ButtonPulse from '@/components/ButtonPulse'
+import ButtonImage from '@/components/ButtonImage'
 Vue.component('ButtonPulse', ButtonPulse);
+Vue.component('ButtonImage', ButtonImage);
 
 import ContentHeader from '@/components/ContentHeader'
 import ContentIntro from '@/components/ContentIntro'
 import ContentDetails from '@/components/ContentDetails'
+import ContentMap from '@/components/ContentMap'
+import ContentAds from '@/components/ContentAds'
 Vue.component('ContentHeader', ContentHeader);
 Vue.component('ContentIntro', ContentIntro);
 Vue.component('ContentDetails', ContentDetails);
+Vue.component('ContentMap', ContentMap);
+Vue.component('ContentAds', ContentAds);
 
 // ######################################################################
 //import all style

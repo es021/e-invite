@@ -3,6 +3,7 @@
 * {
     word-break: keep-all !important;
     overflow-wrap: break-word;
+    box-sizing: border-box;
 }
 
 .break-all {
@@ -28,7 +29,7 @@ body {
 #app {
     margin: auto;
     max-width: $APP-WIDTH;
-    font-family: "Avenir", Helvetica, Arial, sans-serif;
+    font-family: $FONT-NORMAL;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;

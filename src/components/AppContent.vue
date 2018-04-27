@@ -6,7 +6,7 @@
   </div>
   
   <div id="content-intro" class="section">
-     <div data-aos="zoom-in"
+     <div class="content-box"  data-aos="zoom-in"
         data-aos-anchor="#content-header"
         data-aos-duration="800"
         data-aos-anchor-placement="center-center">
@@ -15,7 +15,7 @@
   </div>
 
   <div id="content-details" class="section">
-     <div class="box-triangle" data-aos="fade-right"
+     <div class="content-box" data-aos="fade-left"
         data-aos-anchor="#content-intro"
         data-aos-duration="800"
         data-aos-anchor-placement="top-top">
@@ -24,13 +24,20 @@
   </div>
 
   <div id="content-map" class="section">
-     <div class="box-triangle" data-aos="fade-right"
-        data-aos-anchor="#content-intro"
+     <div class="content-box" data-aos="fade-right"
+        data-aos-anchor="#content-map"
         data-aos-duration="800"
-        data-aos-anchor-placement="center-top">
-        <div class="box-text">
-          Location
-        </div>
+        data-aos-anchor-placement="top-center">
+        <ContentMap></ContentMap>
+    </div>
+  </div>
+
+  <div id="content-ads">
+     <div data-aos="fade-left"
+        data-aos-anchor="#content-map"
+        data-aos-duration="900"
+        data-aos-anchor-placement="top-center">
+        <ContentAds></ContentAds>
     </div>
   </div>
 </div>
@@ -50,9 +57,10 @@ export default {
 
 $COLOR-PEACH: #f0e7d6;
 .app-content {
-
   font-family: "Bad Script";
-  
+  #content-ads {
+    background: $COLOR-PEACH;
+  }
   .section {
     border-top: $COLOR-THEME 2px dotted;
     padding: 10px;
@@ -61,11 +69,15 @@ $COLOR-PEACH: #f0e7d6;
     background-position: center center;
     font-weight: bold;
     font-size: 20px;
-    height: 70vh;
+    height: 80vh;
     color: $COLOR-TEXT;
+
+    .content-box {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
-
 
 // @mixin triangle-left($height, $width,$widthTriangle, $color) {
 //   width: 0;
@@ -79,17 +91,17 @@ $COLOR-PEACH: #f0e7d6;
 // $IMAGE-BOX-WIDTH: 215px;
 // $IMAGE-BOX-TRI-WIDTH: 100px;
 
- // .box-triangle {
-  //   @include triangle-left($IMAGE-BOX-HEIGHT
-  //   , $IMAGE-BOX-WIDTH
-  //   , $IMAGE-BOX-TRI-WIDTH
-  //   , rgba(255,255,255, 0.4));
-  //   color: rgba(0, 0, 0, 0.6);
-  //   box-sizing: border-box;
-  //   .box-text {
-  //     position: absolute;
-  //     left: -$IMAGE-BOX-WIDTH;
-  //     padding: 10px;
-  //   }
-  // }
+// .box-triangle {
+//   @include triangle-left($IMAGE-BOX-HEIGHT
+//   , $IMAGE-BOX-WIDTH
+//   , $IMAGE-BOX-TRI-WIDTH
+//   , rgba(255,255,255, 0.4));
+//   color: rgba(0, 0, 0, 0.6);
+//   box-sizing: border-box;
+//   .box-text {
+//     position: absolute;
+//     left: -$IMAGE-BOX-WIDTH;
+//     padding: 10px;
+//   }
+// }
 </style>

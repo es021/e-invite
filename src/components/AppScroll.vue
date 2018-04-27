@@ -18,7 +18,7 @@ export default {
     return {
       directionDown: true,
       current: 0,
-      contents: ["header", "intro", "details", "map"]
+      contents: ["header", "intro", "details", "map","ads"]
     };
   },
   methods: {
@@ -37,6 +37,7 @@ export default {
     scrollToContent() {
       var id = this.contents[this.current];
       var top = this.getElementTop("#app-content #content-" + id);
+      top -= 10;
       animateScroll(top, 200);
       if (this.current == this.contents.length - 1) {
         this.directionDown = false;

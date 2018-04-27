@@ -9,7 +9,7 @@
       Zulsarhan
     </div>
     <div class="date">
-      28 September 2018
+      29 September 2018
     </div>
   </div>
 </template>
