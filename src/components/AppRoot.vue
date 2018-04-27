@@ -3,12 +3,13 @@
 <div>
     <AppContent></AppContent>
     <AppShare></AppShare>
-    <AppScroll></AppScroll>
+   
     <AppFooter></AppFooter>
 </div>
 </template>
 
 <script>
+//  <AppScroll></AppScroll>
 //    <AppHeader></AppHeader>
 
 export default {

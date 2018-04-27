@@ -7,6 +7,7 @@
 
 <script>
 import { AppImg } from "../config/app-config";
+import { animatePulse } from "../lib/anime";
 
 export default {
   name: "ButtonImage",

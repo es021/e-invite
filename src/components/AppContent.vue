@@ -15,7 +15,7 @@
   </div>
 
   <div id="content-details" class="section">
-     <div class="content-box" data-aos="fade-left"
+     <div class="content-box" data-aos="zoom-out"
         data-aos-anchor="#content-intro"
         data-aos-duration="800"
         data-aos-anchor-placement="top-top">
@@ -24,7 +24,7 @@
   </div>
 
   <div id="content-map" class="section">
-     <div class="content-box" data-aos="fade-right"
+     <div class="content-box" data-aos="zoom-in"
         data-aos-anchor="#content-map"
         data-aos-duration="800"
         data-aos-anchor-placement="top-center">
@@ -33,12 +33,13 @@
   </div>
 
   <div id="content-ads">
-     <div data-aos="fade-left"
+      <ContentAds></ContentAds>
+     <!-- <div data-aos="zoom-out"
         data-aos-anchor="#content-map"
-        data-aos-duration="900"
+        data-aos-duration="1300"
         data-aos-anchor-placement="top-center">
         <ContentAds></ContentAds>
-    </div>
+    </div> -->
   </div>
 </div>
 </template>
