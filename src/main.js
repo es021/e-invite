@@ -57,8 +57,8 @@ new Vue({
     });
 
     // set body background;
-    var body = document.getElementsByTagName("body")[0];
-    body.style.background = `url('${AppImg.get(AppImg.bodyBackground)}')`;
+    //var body = document.getElementsByTagName("body")[0];
+    //body.style.background = `url('${AppImg.get(AppImg.bodyBackground)}')`;
   },
   components: { App },
   template: '<App/>'

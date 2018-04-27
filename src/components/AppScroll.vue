@@ -59,8 +59,8 @@ export default {
 <style lang="scss" scoped>
 .app-scroll {
   position: fixed;
-  bottom: 0;
-  right: 0;
+  bottom: 6px;
+  left: -4px;
   z-index: 20;
 }
 </style>
