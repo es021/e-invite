@@ -9,14 +9,15 @@ $COLOR-BLUE-DARK: #031533;
 $COLOR-GRAY-LIGHT: #edf2f6;
 $COLOR-YELLOW: #FADA0C;
 
-$COLOR-THEME : #91B1A1;
-$COLOR-THEME-DARK : #6d8e7e;
+$COLOR-THEME : #dbbb0c;
+$COLOR-THEME-DARK : #695b08;
 
-$COLOR-TEXT :rgba(0,0,0,0.5);
+$COLOR-BACK:black;
+$COLOR-TEXT :$COLOR-THEME;
 $SHADOW-TEXT : 4px 8px 10px rgba(255, 255, 255, 1); // cast white glow effect
 
-$FONT-NORMAL : "Avenir", Helvetica, Arial, sans-serif;
-
+$FONT-NORMAL : Arial, Helvetica, sans-serif;
+$FONT-TITLE : 'Great Vibes';
 /* Dimension */
 $HEADER-HEIGHT: 75px;
 $LEFT-WIDTH: 300px;

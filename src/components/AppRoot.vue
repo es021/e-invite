@@ -2,7 +2,7 @@
 <template>
 <div>
     <AppContent></AppContent>
-    <AppShare></AppShare>
+    <!-- <AppShare></AppShare> -->
    
     <AppFooter></AppFooter>
 </div>

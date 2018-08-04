@@ -3,7 +3,7 @@
   <div class="ads">
     Want your own e-Invitation Card?<br>
     <i class="text-muted">contact us at</i>
-    <br><b><i class="fab fa-whatsapp left"></i>016-5246191</b>
+    <!-- <br><b><i class="fab fa-whatsapp left"></i>016-5246191</b> -->
     <br><b><i class="fa fa-envelope left"></i>anda.dijemput@gmail.com</b>  
   </div>
 </template>
@@ -22,7 +22,7 @@ export default {
   color: lighten($COLOR-THEME, 20);
   background: darken($COLOR-THEME-DARK, 20);
   padding: 10px 20px;
-  padding-bottom: 55px;
+  padding-bottom: 45px;
   font-size: 12px;
 }
 </style>

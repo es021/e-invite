@@ -53,32 +53,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../style/define/_constant.scss";
-@import "../style/define/_mixin.scss";
-
-$COLOR-PEACH: #f0e7d6;
-.app-content {
-  font-family: "Bad Script";
-  #content-ads {
-    background: $COLOR-PEACH;
-  }
-  .section {
-    border-top: $COLOR-THEME 2px dotted;
-    padding: 10px;
-    background: $COLOR-PEACH;
-    background-size: cover;
-    background-position: center center;
-    font-weight: bold;
-    font-size: 20px;
-    height: 80vh;
-    color: $COLOR-TEXT;
-
-    .content-box {
-      height: 100%;
-      width: 100%;
-    }
-  }
-}
 
 // @mixin triangle-left($height, $width,$widthTriangle, $color) {
 //   width: 0;

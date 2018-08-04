@@ -3,9 +3,11 @@
   <div class="map-parent" >
     <div class="map-detail">
       <div class="map-address">
+          <div class="text">
           Dewan Sri Jugra<br>
           <small class="text-muted">Jalan Stadium Telok Datok
             <br>Telok Datok<br>42700 Banting, Selangor</small>
+        </div>
       </div>
         <div class="map-app" data-aos="zoom-in"
             data-aos-anchor="#content-map"
@@ -53,14 +55,17 @@ export default {
   height: 100%;
   background-position: center center;
   background-size: cover;
-
   .map-detail {
+    margin-top: -50px;
+    margin-bottom: 10px;
     @include flex_center;
     width: 100%;
     .map-address {
-      line-height: 20px;
-      text-align: center;
-      font-weight: bold;
+      .text{
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+      }
     }
     .map-app {
       text-transform: uppercase;
@@ -72,7 +77,7 @@ export default {
   }
   .map-google {
     width: 100%;
-    height: 60%;
+    height: 250px;
     iframe {
       border: solid 1px $COLOR-THEME;
       width: 100%;

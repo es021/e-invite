@@ -34,7 +34,7 @@ Vue.component('ContentAds', ContentAds);
 
 // ######################################################################
 //import all style
-const scss = ["app", "general", "header", "font", "footer", "share", "button"];
+const scss = ["app", "general", "header","content", "font", "footer", "share", "button"];
 scss.map((d, i) => {
   require(`./style/${d}.scss`);
 })

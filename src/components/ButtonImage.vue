@@ -64,7 +64,7 @@ $height-img-active: 42px;
 }
 
 .btn-img:hover {
-  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3);
+  opacity: 0.7;
 }
 
 .btn-img:active {

@@ -9,7 +9,8 @@
       Zulsarhan
     </div>
     <div class="date">
-      29 September 2018
+     Sabtu, 29 September 2018<br></br>
+     <small>19 Muharram 1440H</small>
     </div>
   </div>
 </template>

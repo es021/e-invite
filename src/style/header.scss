@@ -4,16 +4,18 @@
     @include flex;
     @include flex_align(center);
     flex-flow: column;
-    font-family: 'Great Vibes';
     justify-content: center;
     background-size: cover;
     background-position: center center; //text-shadow: $SHADOW-TEXT;
     height: 85vh;
-    color: $COLOR-THEME-DARK;
+    color: $COLOR-THEME;
     .title {
-        font-size: 80px;
+
+        font-family: $FONT-TITLE;
+        font-size: 75px;
         letter-spacing: 2px;
         line-height: 46px;
+        margin-top:95px;
         margin-bottom: 20px;
         .and {
             font-size: 50%;
@@ -23,9 +25,13 @@
         }
     }
     .date {
-        font-size: 40px;
+        font-family: $FONT-NORMAL;
+        color: white;
+        font-size: 19px;
+        line-height: 12px;
+        margin-top: 2px;
         @media only screen and (max-width: 280px) {
-          font-size: 30px;
+          font-size: 25px;
         }
     }
 }
