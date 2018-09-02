@@ -24,7 +24,8 @@
         dan berbesar hati ingin mempersilakan
         <br>
         DATO' / DATIN / TUAN / PUAN / ENCIK / CIK
-        <br><br>
+        <br>
+        <div class="text-jemputan">{{jemputan}}</div>
         -------------------------------------------------------------
         <br>
         sekeluarga bagi menyerikan majlis perkahwinan puteri kami
@@ -45,7 +46,16 @@
 
 <script>
 export default {
-  name: "ContentIntro"
+  name: "ContentIntro",
+  data() {
+    return {
+      jemputan: ""
+    };
+  },
+  mounted() {
+    var jemputan = this.$route.params.jemputan;
+    this.jemputan = jemputan;
+  }
 };
 </script>
 

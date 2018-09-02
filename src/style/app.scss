@@ -30,6 +30,12 @@ body {
     height: 100%;
 }
 
+.text-jemputan{
+    font-weight: bold;
+    color: $COLOR-THEME;
+    padding-top : 5px;
+}
+
 .text-title{
     font-family: $FONT-TITLE;
     font-size: 30px;
