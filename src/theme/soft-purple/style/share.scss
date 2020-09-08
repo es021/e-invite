@@ -1,0 +1,18 @@
+@import './define/_constant.scss';
+@import './define/_mixin.scss';
+.app-share{
+    @include flex;
+    @include flex_align(center);
+    flex-flow: column;
+    justify-content: center;
+    position: fixed;
+    left: 7px;
+    bottom: 7px;
+    z-index: 10;
+    color: whitesmoke;
+
+    a{
+        margin: 2px 0;
+        box-shadow: 1px 1px 7px 1px rgba(0, 0, 0, 0.4);
+    }
+}

@@ -7,25 +7,25 @@ import { AppImg } from './config/app-config';
 
 // ######################################################################
 //register all component
-import AppContent from '@/components/AppContent'
-import AppFooter from '@/components/AppFooter'
-import AppShare from '@/components/AppShare'
-import AppScroll from '@/components/AppScroll'
+import AppContent from '@/theme/soft-purple/components/AppContent'
+import AppFooter from '@/theme/soft-purple/components/AppFooter'
+import AppShare from '@/theme/soft-purple/components/AppShare'
+import AppScroll from '@/theme/soft-purple/components/AppScroll'
 Vue.component('AppContent', AppContent);
 Vue.component('AppFooter', AppFooter);
 Vue.component('AppShare', AppShare);
 Vue.component('AppScroll', AppScroll);
 
-import ButtonPulse from '@/components/ButtonPulse'
-import ButtonImage from '@/components/ButtonImage'
+import ButtonPulse from '@/theme/soft-purple/components/ButtonPulse'
+import ButtonImage from '@/theme/soft-purple/components/ButtonImage'
 Vue.component('ButtonPulse', ButtonPulse);
 Vue.component('ButtonImage', ButtonImage);
 
-import ContentHeader from '@/components/ContentHeader'
-import ContentIntro from '@/components/ContentIntro'
-import ContentDetails from '@/components/ContentDetails'
-import ContentMap from '@/components/ContentMap'
-import ContentAds from '@/components/ContentAds'
+import ContentHeader from '@/theme/soft-purple/components/ContentHeader'
+import ContentIntro from '@/theme/soft-purple/components/ContentIntro'
+import ContentDetails from '@/theme/soft-purple/components/ContentDetails'
+import ContentMap from '@/theme/soft-purple/components/ContentMap'
+import ContentAds from '@/theme/soft-purple/components/ContentAds'
 Vue.component('ContentHeader', ContentHeader);
 Vue.component('ContentIntro', ContentIntro);
 Vue.component('ContentDetails', ContentDetails);
@@ -34,9 +34,9 @@ Vue.component('ContentAds', ContentAds);
 
 // ######################################################################
 //import all style
-const scss = ["app", "general", "header","content", "font", "footer", "share", "button"];
+const scss = ["app", "general", "header", "content", "font", "footer", "share", "button", "map", "ads"];
 scss.map((d, i) => {
-  require(`./style/${d}.scss`);
+  require(`./theme/soft-purple/style/${d}.scss`);
 })
 
 const css = ["fontawesome-all.min"];

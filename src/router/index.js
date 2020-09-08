@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import AppRoot from '@/components/AppRoot'
+import AppRoot from '@/AppRoot'
 
 // register Router
 Vue.use(Router)

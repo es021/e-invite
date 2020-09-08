@@ -1,0 +1,24 @@
+/* Color */
+
+$COLOR-RED-LIGHT: #e24434;
+$COLOR-RED: #EF272F;
+$COLOR-RED-DARK: #82180d;
+$COLOR-BLUE-LIGHT: #41a3fc;
+$COLOR-BLUE: #0154A1;
+$COLOR-BLUE-DARK: #031533;
+$COLOR-GRAY-LIGHT: #edf2f6;
+$COLOR-YELLOW: #FADA0C;
+
+$COLOR-THEME : #695669; 
+$COLOR-THEME-DARK : #8e728d; // border
+
+$COLOR-BACK:#ffffff;
+$COLOR-TEXT :$COLOR-THEME;
+$SHADOW-TEXT : 4px 8px 10px rgba(255, 255, 255, 1); // cast white glow effect
+
+$FONT-NORMAL : Arial, Helvetica, sans-serif;
+$FONT-TITLE : 'Great Vibes';
+/* Dimension */
+$HEADER-HEIGHT: 75px;
+$LEFT-WIDTH: 300px;
+$APP-WIDTH: 500px;

@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import { animatePulse } from "../lib/anime";
+import { animatePulse } from "../../../lib/anime";
 
 export default {
   name: "ButtonPulse",
@@ -39,24 +39,3 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-@import "../style/define/_mixin.scss";
-
-.pulse-btn-container {
-  @include flex_center;
-  justify-content: center;
-  width: 60px;
-  height: 60px;
-
-  .pulse-btn {
-    cursor: pointer;
-    @include flex_center;
-    color: white;
-    font-size: 30px;
-    width: 40px;
-    height: 40px;
-    background: cornflowerblue;
-    border-radius: 100%;
-  }
-}
-</style>

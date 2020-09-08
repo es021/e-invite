@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import { AppImg } from "../config/app-config";
+import { AppImg } from "../../../config/app-config";
 
 export default {
   name: "AppContent"

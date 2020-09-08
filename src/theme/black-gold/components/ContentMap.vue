@@ -26,7 +26,7 @@
   </div>
 </template>
 <script>
-import { AppImg } from "../config/app-config";
+import { AppImg } from "../../../config/app-config";
 
 export default {
   name: "ContentMap",
@@ -47,45 +47,6 @@ export default {
   }
 };
 </script>
-
-<style lang="scss" scoped>
-@import "../style/define/_mixin.scss";
-@import "../style/define/_constant.scss";
-.map-parent {
-  height: 100%;
-  background-position: center center;
-  background-size: cover;
-  .map-detail {
-    margin-top: -50px;
-    margin-bottom: 10px;
-    @include flex_center;
-    width: 100%;
-    .map-address {
-      .text{
-        font-size: 20px;
-        line-height: 20px;
-        text-align: center;
-      }
-    }
-    .map-app {
-      text-transform: uppercase;
-    }
-
-    @media only screen and (max-width: 280px) {
-      font-size: 80%;
-    }
-  }
-  .map-google {
-    width: 100%;
-    height: 250px;
-    iframe {
-      border: solid 1px $COLOR-THEME;
-      width: 100%;
-      height: 100%;
-    }
-  }
-}
-</style>
 
 
 

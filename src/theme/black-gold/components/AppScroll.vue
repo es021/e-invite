@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { animateScroll } from "../lib/scroll";
+import { animateScroll } from "../../../lib/scroll";
 export default {
   name: "AppScroll",
   data: () => {
