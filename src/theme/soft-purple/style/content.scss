@@ -42,6 +42,7 @@
             .det-title{
                 width: 100%;
                 color:$COLOR-THEME;
+                font-weight: bold;
                 text-align: left;
             }
             .det-item{
@@ -50,7 +51,7 @@
                 justify-content: space-between;
                 margin: 3px 0px;
                 .deti-label{
-                    opacity: 0.6;
+                    opacity: 0.85;
                     text-align: left;
                 }
                 .deti-value{

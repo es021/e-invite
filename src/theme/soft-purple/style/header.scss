@@ -1,5 +1,5 @@
-@import './define/_constant.scss';
-@import './define/_mixin.scss';
+@import "./define/_constant.scss";
+@import "./define/_mixin.scss";
 .app-header {
     @include flex;
     @include flex_align(center);
@@ -8,16 +8,23 @@
     background-size: cover;
     background-position: center center; //text-shadow: $SHADOW-TEXT;
     height: 85vh;
-    color: $COLOR-THEME;
-    .title {
 
+    .app-header-content {
+        margin-right: 4em;
+        margin-bottom: 4em;
+        // padding-top: 6em;
+        // padding-bottom: 1em;
+    }
+    .title {
+        color: $COLOR-THEME;
         font-family: $FONT-TITLE;
-        font-size: 75px;
-        letter-spacing: 2px;
-        line-height: 46px;
-        margin-top:95px;
-        margin-bottom: 20px;
+        font-size: 100px;
+        letter-spacing: 3px;
+        line-height: 56px;
+        margin-top: 95px;
+        margin-bottom: 100px;
         .and {
+            color: $COLOR-THEME-DARK;
             font-size: 50%;
         }
         @media only screen and (max-width: 280px) {
@@ -26,12 +33,12 @@
     }
     .date {
         font-family: $FONT-NORMAL;
-        color: white;
-        font-size: 19px;
+        color: $COLOR-THEME-DARK;
+        font-size: 18px;
         line-height: 12px;
-        margin-top: 2px;
+        margin-top: 0px;
         @media only screen and (max-width: 280px) {
-          font-size: 25px;
+            font-size: 25px;
         }
     }
 }
