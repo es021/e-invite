@@ -2,7 +2,7 @@
 <template>
   <div class="app-header" v-bind:style="{backgroundImage:background}">
     <div class="app-header-content">
-      <div class="date">THE WEDDING OF</div>
+      <div class="date">{{eventName}}</div>
       <div class="title font-lobster">
         {{pengantinPerempuan}}
         <br />
@@ -24,18 +24,13 @@
 </template>
 
 <script>
-import { AppImg } from "../../../config/app-config";
+import * as Data from "../data";
 
 export default {
   name: "ContentHeader",
   data() {
     return {
-      day: "SATURDAY",
-      date: "29 SEPTEMBER 2018",
-      dateHijr: "19 MUHARRAM 1440H",
-      pengantinLelaki: "Izhar",
-      pengantinPerempuan: "Balqis",
-      background: `url('${AppImg.get("soft-purple-header.jpg")}')`,
+      ...Data.Header,
     };
   },
 };

@@ -16,7 +16,7 @@
         // padding-bottom: 1em;
     }
     .title {
-        color: $COLOR-THEME;
+        color: $COLOR-THEME-DARK;
         font-family: $FONT-TITLE;
         font-size: 100px;
         letter-spacing: 3px;
@@ -24,7 +24,7 @@
         margin-top: 95px;
         margin-bottom: 100px;
         .and {
-            color: $COLOR-THEME-DARK;
+            color: $COLOR-THEME;
             font-size: 50%;
         }
         @media only screen and (max-width: 280px) {
@@ -33,7 +33,7 @@
     }
     .date {
         font-family: $FONT-NORMAL;
-        color: $COLOR-THEME-DARK;
+        color: $COLOR-THEME;
         font-size: 18px;
         line-height: 12px;
         margin-top: 0px;

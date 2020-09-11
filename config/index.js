@@ -6,7 +6,7 @@ const path = require('path')
 
 //@wzs21
 //const ROOT_PATH = "e-invite/public";
-const ROOT_PATH = "event/balqis-izhar";
+const ROOT_PATH = "event/balqis-izhar-nikah";
 
 module.exports = {
   dev: {

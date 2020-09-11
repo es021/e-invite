@@ -5,12 +5,9 @@
       <div class="map-detail">
         <div class="map-address">
           <div class="text">
-            DEWAN SRI JUGRA
+            {{locationTitle}}
             <br />
-            <small class="text-muted">
-              JALAN STADIUM TELOK DATOK
-              <br />TELOK DATOK
-              <br />42700 BANTING, SELANGOR
+            <small class="text-muted" v-html="locationDetail">
             </small>
           </div>
         </div>
@@ -27,28 +24,28 @@
       </div>
       <div class="map-google">
         <iframe
-          src="//www.google.com/maps/embed/v1/place?q=Dewan%20Sri%20Jugra%20Banting%20Selangor
-          &zoom=15
-          &key=AIzaSyARe_33egQYxDFVhHbmbk1JejbD48Yc9Eg"
+          :src="googleMapUrl"
         ></iframe>
       </div>
     </div>
   </div>
 </template>
 <script>
+import * as Data from "../data";
+
 export default {
   name: "ContentMap",
   data: () => {
-    return {};
+    return {
+      ...Data.Map
+    };
   },
   methods: {
     openWaze() {
-      window.location =
-        "waze://?q=Dewan+Sri+Jugra+Jalan+Mahkamah,+Banting,ll=2.8187772,101.5165589,&navigate=yes";
+      window.location = this.onClickWaze;
     },
     openGoogleMap() {
-      window.location =
-        "http://maps.google.com/?daddr=Dewan+Sri+Jugra+Jalan+Mahkamah,+Banting";
+      window.location = this.onClickGoogle;
     },
   },
 };

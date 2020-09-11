@@ -60,7 +60,7 @@ export default {
   name: "AppContent",
   data() {
     return {
-      background: `url('${AppImg.get("soft-purple-body.jpg")}')`,
+      background: `url('${AppImg.get("cloud-blue-body.jpg")}')`,
     };
   },
 };

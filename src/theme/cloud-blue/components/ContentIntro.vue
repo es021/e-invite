@@ -1,40 +1,44 @@
 
 <template>
   <div>
-    <div class="title">Walimatul Urus</div>
+    <div class="title">{{eventName}}</div>
 
     <div class="body">
       <small>Assalamualaikum Warahmatullahi Wabarakatuh</small>
       <br />
       <br />
       <b>
-        HJ. ABU BAKAR BIN MAHABOT
+        {{dad}}
         <br />&
-        <br />HJH. ZUBAIDAH BINTI ABDUL HALIM
+        <br />
+        {{mom}}
       </b>
       <br />
       <br />
-
       <small>
         Dengan penuh rasa kesyukuran kepada Allah SWT
         <br />dan berbesar hati ingin mempersilakan
         <br />DATO' / DATIN / TUAN / PUAN / ENCIK / CIK
         <br />
         <div class="text-jemputan">{{jemputan}}</div>-------------------------------------------------------------
-        <br />sekeluarga bagi menyerikan majlis perkahwinan puteri kami
         <br />
-        <div class="text-title">Siti Balqis Binti Muhammad Ghanisma</div>dengan pasangannya
-        <div class="text-title">Izhar</div>
+        sekeluarga bagi menyerikan {{eventName2}} kami
+        <br />
+        <div class="text-title">{{pengantinPerempuan}}</div>dengan pasangannya
+        <div class="text-title">{{pengantinLelaki}}</div>
       </small>
     </div>
   </div>
 </template>
 
 <script>
+import * as Data from "../data";
+
 export default {
   name: "ContentIntro",
   data() {
     return {
+      ...Data.Intro,
       jemputan: "",
     };
   },
