@@ -11,10 +11,12 @@ import AppContent from '@/theme/cloud-blue/components/AppContent'
 import AppFooter from '@/theme/cloud-blue/components/AppFooter'
 import AppShare from '@/theme/cloud-blue/components/AppShare'
 import AppScroll from '@/theme/cloud-blue/components/AppScroll'
+import AppPopup from '@/theme/cloud-blue/components/AppPopup'
 Vue.component('AppContent', AppContent);
 Vue.component('AppFooter', AppFooter);
 Vue.component('AppShare', AppShare);
 Vue.component('AppScroll', AppScroll);
+Vue.component('AppPopup', AppPopup);
 
 import ButtonPulse from '@/theme/cloud-blue/components/ButtonPulse'
 import ButtonImage from '@/theme/cloud-blue/components/ButtonImage'
@@ -26,15 +28,31 @@ import ContentIntro from '@/theme/cloud-blue/components/ContentIntro'
 import ContentDetails from '@/theme/cloud-blue/components/ContentDetails'
 import ContentMap from '@/theme/cloud-blue/components/ContentMap'
 import ContentAds from '@/theme/cloud-blue/components/ContentAds'
+import ContentAction from '@/theme/cloud-blue/components/ContentAction'
 Vue.component('ContentHeader', ContentHeader);
 Vue.component('ContentIntro', ContentIntro);
 Vue.component('ContentDetails', ContentDetails);
 Vue.component('ContentMap', ContentMap);
 Vue.component('ContentAds', ContentAds);
+Vue.component('ContentAction', ContentAction);
+
+
+import FormRsvp from '@/theme/cloud-blue/components/FormRsvp'
+import FormCheckIn from '@/theme/cloud-blue/components/FormCheckIn'
+Vue.component('FormRsvp', FormRsvp);
+Vue.component('FormCheckIn', FormCheckIn);
 
 // ######################################################################
 //import all style
-const scss = ["app", "general", "header", "content", "font", "footer", "share", "button", "map", "ads"];
+const scss = [
+  "app", "general",
+  "header", "content",
+  "font", "footer",
+  "share", "button",
+  "map", "ads",
+  "action", "popup",
+  "form",
+];
 scss.map((d, i) => {
   require(`./theme/cloud-blue/style/${d}.scss`);
 })
@@ -45,10 +63,19 @@ css.map((d, i) => {
 })
 
 
+
+// vuex setup
+import Vuex from 'vuex';
+Vue.use(Vuex);
+import storeObj from './store';
+const store = new Vuex.Store(storeObj);
+
+
 console.log(process.env.NODE_ENV);
 Vue.config.productionTip = false
 new Vue({
   el: '#app',
+  store,
   router,
   created() {
     AOS.init({

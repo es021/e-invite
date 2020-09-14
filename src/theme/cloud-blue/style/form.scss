@@ -1,0 +1,39 @@
+@import "./define/_constant.scss";
+@import "./define/_mixin.scss";
+
+.form-input {
+    margin-bottom: 15px;
+    padding: 10px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    label {
+        font-size: 70%;
+        margin-bottom: 5px;
+    }
+
+    input,
+    select {
+        width: 100%;
+        padding: 5px 0px;
+        border: none;
+        border-bottom: 1px solid rgb(167, 162, 162);
+
+        &:focus,
+        &:active {
+            border: none;
+            border-bottom: 1px solid rgb(75, 73, 73);
+        }
+    }
+}
+
+.form-error {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 80%;
+}
+
+.form-submit {
+    margin: 10px 0px;
+}

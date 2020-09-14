@@ -32,6 +32,24 @@ $COLOR-TWITTER: #1da1f2;
     opacity: 0.8;
 }
 
+.btn-primary {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #99d3ea;
+    color: #23596e;
+    padding: 10px 15px;
+
+    &:hover {
+        background: #97cde4;
+        color: #133947;
+    }
+    &:active {
+        background: #99d3ea;
+        color: #23596e;
+    }
+}
+
 @mixin btnIconColor($btn_class, $color) {
     .btn-icon.#{$btn_class} {
         background: $color;

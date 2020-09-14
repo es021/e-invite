@@ -1,11 +1,11 @@
 
 <template>
-<div>
+  <div>
     <AppContent></AppContent>
-    <!-- <AppShare></AppShare> -->
-   
+    <AppPopup></AppPopup>
+    <!-- <ContentAction></ContentAction> -->
     <AppFooter></AppFooter>
-</div>
+  </div>
 </template>
 
 <script>
@@ -14,7 +14,6 @@
 
 export default {
   name: "Root",
-  created(){    
-  }
+  created() {},
 };
 </script>

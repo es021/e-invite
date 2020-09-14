@@ -41,6 +41,10 @@
       </div>
     </div>
 
+    <div id="content-action">
+        <ContentAction></ContentAction>
+    </div>
+
     <div id="content-ads">
       <!-- <ContentAds></ContentAds> -->
       <!-- <div data-aos="zoom-out"

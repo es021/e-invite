@@ -72,6 +72,11 @@ export const Map = {
     locationTitle: "MASJID AT-TAQWA",
     locationDetail: "JALAN SULTAN ABDUL SAMAD,<br>TAMAN SETIA JAYA,<br>42700 BANTING, SELANGOR",
     googleMapUrl: "//www.google.com/maps/embed/v1/place?q=masjid%20at%20taqwa%20banting&zoom=15&key=AIzaSyARe_33egQYxDFVhHbmbk1JejbD48Yc9Eg",
-    onClickGoogle : "http://maps.google.com/?daddr=Masjid+At-taqwa,+Banting",
-    onClickWaze : "https://www.waze.com/ul?place=ChIJHRt4E5CkzTEROXTnheXMNvE&ll=2.81117000%2C101.49195800&navigate=yes",
+    onClickGoogle: "http://maps.google.com/?daddr=Masjid+At-taqwa,+Banting",
+    onClickWaze: "https://www.waze.com/ul?place=ChIJHRt4E5CkzTEROXTnheXMNvE&ll=2.81117000%2C101.49195800&navigate=yes",
+}
+
+
+export const Action = {
+    event: "balqis-izhar-akad"
 }

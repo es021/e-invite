@@ -1,0 +1,44 @@
+@import "./define/_constant";
+@import "./define/_mixin";
+.app-popup {
+    @include flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 101;
+    position: fixed;
+    align-items: center;
+    left: 0;
+    top: 0;
+    .ap-bg {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .ap-body {
+        .ap-close {
+            cursor: pointer;
+            position: absolute;
+            right: 10px;
+            top: 5px;
+            color: $COLOR-THEME;
+        }
+        padding-top: 10px;
+        color: $COLOR-THEME;
+        position: relative;
+        border-radius: 7px;
+        background: white;
+        width: 600px;
+        max-width: 90vw;
+        // max-height: 90vh;
+        margin-bottom: 25px;
+    }
+}
+
+// use in bayaran popup
+.app-popup.ap-slot {
+    z-index: 80;
+}
