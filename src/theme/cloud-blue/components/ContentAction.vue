@@ -32,7 +32,6 @@ export default {
     };
   },
   mounted() {
-    this.popupOpen({ content: FormRsvp, prop: {} });
   },
   methods: {
     ...mapMutations(["popupOpen", "popupClose"]),

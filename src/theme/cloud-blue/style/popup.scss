@@ -27,12 +27,13 @@
             color: $COLOR-THEME;
         }
         padding-top: 10px;
+        margin-left: -10px;
         color: $COLOR-THEME;
         position: relative;
         border-radius: 7px;
         background: white;
-        width: 600px;
-        max-width: 90vw;
+        width: 300px;
+        // max-width: 95vw;
         // max-height: 90vh;
         margin-bottom: 25px;
     }

@@ -20,7 +20,7 @@
         <br />dan berbesar hati ingin mempersilakan
         <br />DATO' / DATIN / TUAN / PUAN / ENCIK / CIK
         <br />
-        <div class="text-jemputan">{{jemputan}}</div>-------------------------------------------------------------
+        <div class="text-jemputan">{{jemputan}}</div>-------------------------------------------------
         <br />
         sekeluarga bagi menyerikan {{eventName2}} kami
         <br />

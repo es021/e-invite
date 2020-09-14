@@ -50,6 +50,24 @@ $COLOR-TWITTER: #1da1f2;
     }
 }
 
+.btn-secondary {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #f4c2d8;
+    color: #74314e;
+    padding: 10px 15px;
+
+    &:hover {
+        background: #e0acc3;
+        color: #702c4a;
+    }
+    &:active {
+        background: #f4c2d8;
+        color: #74314e;
+    }
+}
+
 @mixin btnIconColor($btn_class, $color) {
     .btn-icon.#{$btn_class} {
         background: $color;
