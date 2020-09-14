@@ -3,6 +3,8 @@
   <div :style="{padding:'25px 25px'}">
     <div v-if="isSuccess">
       <b>Thank you for checking in.</b>
+      <br />
+      <br />
       <button @click="popupClose" class="btn-primary">Close</button>
     </div>
     <form v-else @submit="onSubmit">
@@ -14,6 +16,10 @@
       <div class="form-input">
         <label>Telephone No</label>
         <input required="true" type="text" name="phone_number" v-model="phone_number" />
+      </div>
+      <div class="form-input">
+        <label>Temperature</label>
+        <input type="text" name="temperature" v-model="temperature" />
       </div>
       <div v-if="error" class="form-error">{{error}}</div>
       <div class="form-submit">
@@ -42,6 +48,7 @@ export default {
       event: EventSlug,
       name: "",
       phone_number: "",
+      temperature: "",
       error: null,
       isSuccess: false,
     };
@@ -63,6 +70,7 @@ export default {
         name: this.name,
         event: this.event,
         phone_number: this.phone_number,
+        temperature: this.temperature,
       })
         .then((res) => {
           try {

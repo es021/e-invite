@@ -12,7 +12,8 @@ $table = "check_in";
 $arr = array(
     "event" => $_POST["event"],
     "name" => $_POST["name"],
-    "phone_number" => $_POST["phone_number"]
+    "phone_number" => $_POST["phone_number"],
+    "temperature" => $_POST["temperature"]
 );
 
 $res = $DB->query_insert($table, $arr);
@@ -28,7 +29,7 @@ if($res == false){
 echo json_encode(array("status"=>$status,"error"=>$error));
 
 /**
- CREATE TABLE `e_invite`.`check_in` ( `ID` BIGINT(20) NOT NULL AUTO_INCREMENT , `event` VARCHAR(100) NOT NULL , `name` TEXT NOT NULL , `phone_number` VARCHAR(50) NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`ID`), INDEX (`event`)) ENGINE = InnoDB; 
+ CREATE TABLE `e_invite`.`check_in` ( `ID` BIGINT(20) NOT NULL AUTO_INCREMENT , `event` VARCHAR(100) NOT NULL , `name` TEXT NOT NULL , `phone_number` VARCHAR(50) NULL , `temperature` VARCHAR(50) NULL , `created_at` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP , PRIMARY KEY (`ID`), INDEX (`event`)) ENGINE = InnoDB; 
  */
 ?>
 
