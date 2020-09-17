@@ -2,9 +2,7 @@
 <template>
   <div :style="{padding:'25px 25px'}">
     <div v-if="isSuccess">
-      <b>Thank you for checking in.</b>
-      <br />
-      <br />
+      <div v-html="MessageCheckIn"></div>
       <button @click="popupClose" class="btn-primary">Close</button>
     </div>
     <form v-else @submit="onSubmit">
@@ -31,12 +29,14 @@
 
 <script>
 import { mapGetters, mapMutations } from "vuex";
-import { EventSlug } from "../../../config/app-config";
+import { EventSlug, MessageCheckIn } from "../data";
 import { phpRequest } from "../../../helper/api-helper";
 export default {
   props: {},
   data: () => {
     return {
+      MessageCheckIn: MessageCheckIn,
+
       // name: "Wan",
       // event: EventSlug,
       // headcount: "1",

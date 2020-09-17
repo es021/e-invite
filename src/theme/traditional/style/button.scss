@@ -1,0 +1,153 @@
+@import "./define/_constant.scss";
+@import "./define/_mixin.scss";
+
+$SIZE: 35px;
+$BORDER-SIZE: 2px;
+$COLOR: $COLOR-TEXT;
+$COLOR-WS: #1fa013;
+$COLOR-FB: #3b5998;
+$COLOR-TWITTER: #1da1f2;
+
+.btn-icon {
+    @include flex;
+    @include flex_align(center);
+    justify-content: center;
+
+    width: $SIZE;
+    height: $SIZE;
+
+    background: $COLOR;
+    border-radius: 100%;
+}
+
+.btn-icon:hover {
+    width: $SIZE - $BORDER-SIZE - 1;
+    height: $SIZE - $BORDER-SIZE - 1;
+    color: $COLOR;
+    border: $BORDER-SIZE $COLOR solid;
+    background: white;
+}
+
+.btn-icon:active {
+    opacity: 0.8;
+}
+
+@mixin btnIconColor($btn_class, $color) {
+    .btn-icon.#{$btn_class} {
+        background: $color;
+    }
+
+    .btn-icon.#{$btn_class}:hover {
+        color: $color;
+        border-color: $color;
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
+
+@include btnIconColor("btn-ws", $COLOR-WS);
+@include btnIconColor("btn-fb", $COLOR-FB);
+@include btnIconColor("btn-twitter", $COLOR-TWITTER);
+
+// ##############################
+// BTN IMG
+$height: 50px;
+$height-img-active: 42px;
+.btn-img {
+    @include flex_center;
+    justify-content: flex-start;
+    height: $height;
+    width: $height;
+    background: white;
+    border-radius: 100%;
+    border: 1px black solid;
+    color: black;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+
+    .btn-img-img {
+        background-position: center center;
+        background-size: cover;
+        width: $height - 10;
+        height: $height - 10;
+    }
+}
+
+.btn-img:hover {
+    opacity: 0.7;
+}
+
+.btn-img:active {
+    box-shadow: none;
+    .btn-img-img {
+        width: $height-img-active;
+        height: $height-img-active;
+    }
+}
+
+.btn-img.btn-light-blue {
+    color: darken(#79d1e9, 10);
+    border-color: darken(#79d1e9, 10);
+}
+
+.btn-img.btn-green {
+    color: #0eab69;
+    border-color: #0eab69;
+}
+
+// #######################
+// BTN PULSE
+
+.pulse-btn-container {
+    @include flex_center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+
+    .pulse-btn {
+        cursor: pointer;
+        @include flex_center;
+        color: white;
+        font-size: 30px;
+        width: 40px;
+        height: 40px;
+        background: cornflowerblue;
+        border-radius: 100%;
+    }
+}
+
+.btn-primary {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #810c0e;
+    color: white;
+    padding: 10px 15px;
+
+    &:hover {
+        background: #af282a;
+        color: white;
+    }
+    &:active {
+        background: #810c0e;
+        color: white;
+    }
+}
+
+.btn-secondary {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #810c0e;
+    color: white;
+    padding: 10px 15px;
+
+    &:hover {
+        background: #af282a;
+        color: white;
+    }
+    &:active {
+        background: #810c0e;
+        color: white;
+    }
+}

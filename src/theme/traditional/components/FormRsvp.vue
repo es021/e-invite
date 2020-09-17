@@ -46,7 +46,6 @@ export default {
   data: () => {
     return {
       MessageRsvp: MessageRsvp,
-
       // name: "Wan",
       // event: EventSlug,
       // headcount: "1",

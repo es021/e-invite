@@ -1,4 +1,12 @@
 import { AppImg } from "../../config/app-config";
+export const EventSlug = "balqis-izhar-akad"
+export const MessageRsvp = `<b>Thank you for joining us.</b>
+<br />Please make sure to bring along your face mask.
+<br />
+<br />`;
+export const MessageCheckIn = `<b>Thank you for checking in.</b>
+<br />
+<br />`;
 
 export const Header = {
     eventName: "MAJLIS AKAD NIKAH",
@@ -15,7 +23,7 @@ export const Intro = {
     dad: "HJ. ABU BAKAR BIN MAHABOT",
     mom: "HJH. ZUBAIDAH BINTI ABDUL HALIM",
     eventName2: "majlis akad nikah puteri",
-    pengantinPerempuan: "Siti Balqis Binti Muhammad Ghanisma",
+    pengantinPerempuan: "Siti Balqis Binti<br>Muhammad Ghanisma",
     pengantinLelaki: "Izhar Bin Sapawi"
 }
 
@@ -74,9 +82,4 @@ export const Map = {
     googleMapUrl: "//www.google.com/maps/embed/v1/place?q=masjid%20at%20taqwa%20banting&zoom=15&key=AIzaSyARe_33egQYxDFVhHbmbk1JejbD48Yc9Eg",
     onClickGoogle: "http://maps.google.com/?daddr=Masjid+At-taqwa,+Banting",
     onClickWaze: "https://www.waze.com/ul?place=ChIJHRt4E5CkzTEROXTnheXMNvE&ll=2.81117000%2C101.49195800&navigate=yes",
-}
-
-
-export const Action = {
-    event: "balqis-izhar-akad"
 }

@@ -17,6 +17,22 @@
       </div>
     </div>
 
+    <div
+      id="content-intro"
+      class="section"
+      v-bind:style="{backgroundImage:backgroundDoa, minHeight:'65vh'}"
+    >
+      <div
+        class="content-box"
+        data-aos="zoom-in"
+        data-aos-anchor="#content-header"
+        data-aos-duration="800"
+        data-aos-anchor-placement="center-center"
+      >
+        <ContentDoa></ContentDoa>
+      </div>
+    </div>
+
     <div id="content-details" class="section" v-bind:style="{backgroundImage:background}">
       <div
         class="content-box"
@@ -58,13 +74,13 @@
 </template>
 
 <script>
-import { AppImg } from "../../../config/app-config";
+import * as Data from "../data";
 
 export default {
   name: "AppContent",
   data() {
     return {
-      background: `url('${AppImg.get("cloud-blue-body.jpg")}')`,
+      ...Data.AppContent,
     };
   },
 };

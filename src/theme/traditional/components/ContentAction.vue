@@ -1,14 +1,14 @@
 
 <template>
   <div class="action">
-    <button @click="onClickRsvp" class="action-btn action-rsvp">
+    <button @click="onClickRsvp" class="action-btn action-rsvp btn-primary">
       <div>
         <i class="fa fa-calendar-check"></i>
       </div>
       <label>RSVP</label>
     </button>
 
-    <button @click="onClickCheckIn" class="action-btn action-check-in">
+    <button @click="onClickCheckIn" class="action-btn action-check-in btn-primary">
       <div>
         <i class="fa fa-sign-in-alt"></i>
       </div>

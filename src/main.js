@@ -7,38 +7,40 @@ import { AppImg } from './config/app-config';
 
 // ######################################################################
 //register all component
-import AppContent from '@/theme/cloud-blue/components/AppContent'
-import AppFooter from '@/theme/cloud-blue/components/AppFooter'
-import AppShare from '@/theme/cloud-blue/components/AppShare'
-import AppScroll from '@/theme/cloud-blue/components/AppScroll'
-import AppPopup from '@/theme/cloud-blue/components/AppPopup'
+import AppContent from '@/theme/traditional/components/AppContent'
+import AppFooter from '@/theme/traditional/components/AppFooter'
+import AppShare from '@/theme/traditional/components/AppShare'
+import AppScroll from '@/theme/traditional/components/AppScroll'
+import AppPopup from '@/theme/traditional/components/AppPopup'
 Vue.component('AppContent', AppContent);
 Vue.component('AppFooter', AppFooter);
 Vue.component('AppShare', AppShare);
 Vue.component('AppScroll', AppScroll);
 Vue.component('AppPopup', AppPopup);
 
-import ButtonPulse from '@/theme/cloud-blue/components/ButtonPulse'
-import ButtonImage from '@/theme/cloud-blue/components/ButtonImage'
+import ButtonPulse from '@/theme/traditional/components/ButtonPulse'
+import ButtonImage from '@/theme/traditional/components/ButtonImage'
 Vue.component('ButtonPulse', ButtonPulse);
 Vue.component('ButtonImage', ButtonImage);
 
-import ContentHeader from '@/theme/cloud-blue/components/ContentHeader'
-import ContentIntro from '@/theme/cloud-blue/components/ContentIntro'
-import ContentDetails from '@/theme/cloud-blue/components/ContentDetails'
-import ContentMap from '@/theme/cloud-blue/components/ContentMap'
-import ContentAds from '@/theme/cloud-blue/components/ContentAds'
-import ContentAction from '@/theme/cloud-blue/components/ContentAction'
+import ContentHeader from '@/theme/traditional/components/ContentHeader'
+import ContentIntro from '@/theme/traditional/components/ContentIntro'
+import ContentDoa from '@/theme/traditional/components/ContentDoa'
+import ContentDetails from '@/theme/traditional/components/ContentDetails'
+import ContentMap from '@/theme/traditional/components/ContentMap'
+import ContentAds from '@/theme/traditional/components/ContentAds'
+import ContentAction from '@/theme/traditional/components/ContentAction'
 Vue.component('ContentHeader', ContentHeader);
 Vue.component('ContentIntro', ContentIntro);
+Vue.component('ContentDoa', ContentDoa);
 Vue.component('ContentDetails', ContentDetails);
 Vue.component('ContentMap', ContentMap);
 Vue.component('ContentAds', ContentAds);
 Vue.component('ContentAction', ContentAction);
 
 
-import FormRsvp from '@/theme/cloud-blue/components/FormRsvp'
-import FormCheckIn from '@/theme/cloud-blue/components/FormCheckIn'
+import FormRsvp from '@/theme/traditional/components/FormRsvp'
+import FormCheckIn from '@/theme/traditional/components/FormCheckIn'
 Vue.component('FormRsvp', FormRsvp);
 Vue.component('FormCheckIn', FormCheckIn);
 
@@ -51,10 +53,10 @@ const scss = [
   "share", "button",
   "map", "ads",
   "action", "popup",
-  "form",
+  "form", "doa"
 ];
 scss.map((d, i) => {
-  require(`./theme/cloud-blue/style/${d}.scss`);
+  require(`./theme/traditional/style/${d}.scss`);
 })
 
 const css = ["fontawesome-all.min"];

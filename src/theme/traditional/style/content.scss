@@ -1,0 +1,64 @@
+@import "./define/_constant.scss";
+@import "./define/_mixin.scss";
+
+.app-content {
+    border: darken($COLOR-THEME-DARK,1) 1px solid;
+    border-top: none;
+    border-bottom:none;
+  #content-ads {
+    background: $COLOR-BACK;
+  }
+  .section {
+    height: 100%;  
+    @include flex_center;
+
+
+    border-top: $COLOR-THEME-DARK 2px dotted;
+    padding: 10px;
+    background: $COLOR-BACK;
+    background-size: cover;
+    background-position: center center;
+    min-height: 80vh;
+    color: $COLOR-TEXT;
+
+    .content-box {
+      height: 100%;
+      width: 100%;
+        .title{
+            font-family: $FONT-TITLE;
+            font-size: 40px;
+        }
+        .body{
+            font-size: 18px;
+            font-family: $FONT-NORMAL;
+            color: $COLOR-TEXT;
+        }
+
+        .detail{
+            font-size: 15px;
+            max-width: 250px;
+            margin: auto;
+            margin-bottom : 20px;
+            .det-title{
+                width: 100%;
+                color:$COLOR-THEME;
+                font-weight: bold;
+                text-align: left;
+            }
+            .det-item{
+                @include flex_center;
+
+                justify-content: space-between;
+                margin: 3px 0px;
+                .deti-label{
+                    opacity: 0.85;
+                    text-align: left;
+                }
+                .deti-value{
+                    text-align: right;
+                }
+            }
+        }
+    }
+  }
+}

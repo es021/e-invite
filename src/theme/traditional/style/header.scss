@@ -1,0 +1,46 @@
+@import "./define/_constant.scss";
+@import "./define/_mixin.scss";
+.app-header {
+    @include flex;
+    @include flex_align(center);
+    flex-flow: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center center; //text-shadow: $SHADOW-TEXT;
+    height: 85vh;
+
+    .app-header-content {
+        margin-right: 4.2em;
+        margin-bottom: 2em;
+        // padding-top: 6em;
+        // padding-bottom: 1em;
+    }
+    .title {
+        color: $COLOR-THEME-DARK;
+        font-family: $FONT-TITLE;
+        font-size: 100px;
+        letter-spacing: 3px;
+        line-height: 56px;
+        margin-top: 95px;
+        margin-bottom: 100px;
+        text-shadow: 2px 1px 1px black;
+        .and {
+            color: $COLOR-THEME;
+            font-size: 50%;
+            margin-left: 50px;
+        }
+        @media only screen and (max-width: 280px) {
+            font-size: 65px;
+        }
+    }
+    .date {
+        font-family: $FONT-NORMAL;
+        color: $COLOR-THEME;
+        font-size: 18px;
+        line-height: 12px;
+        margin-top: 0px;
+        @media only screen and (max-width: 280px) {
+            font-size: 25px;
+        }
+    }
+}
