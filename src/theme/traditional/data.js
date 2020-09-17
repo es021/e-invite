@@ -97,7 +97,7 @@ export const Detail = [
         icon: "user",
         data: [
             {
-                label: "Pn. Zubaidah Binti Hj. Abdul Halim",
+                label: "Hjh. Zubaidah Binti Hj. Abdul Halim",
                 value: ""
             },
 

@@ -19,7 +19,7 @@
         <label>Headcount</label>
         <input required="true" type="number" name="headcount" v-model="headcount" />
       </div>
-      <div class="form-input">
+      <!-- <div class="form-input">
         <label>Slot</label>
         <select required="true" name="slot" v-model="slot">
           <option value="11am-12pm">11 AM - 12 PM</option>
@@ -28,7 +28,7 @@
           <option value="2pm-3pm">2 PM - 3 PM</option>
           <option value="3pm-4pm">3 PM - 4 PM</option>
         </select>
-      </div>
+      </div> -->
       <div v-if="error" class="form-error">{{error}}</div>
       <div class="form-submit">
         <input class="btn-primary" type="submit" value="Submit" />
