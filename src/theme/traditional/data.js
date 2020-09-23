@@ -79,30 +79,37 @@ export const Detail = [
         ]
     },
     {
-        title: "UNTUK DIHUBUNGI",
-        icon: "phone",
-        data: [
-            {
-                label: "En. Ghanisma (Bapa)",
-                value: "014 363 4169"
-            },
-            {
-                label: "Pn. Siti Mardziah<br>(Ibu Saudara)",
-                value: "011 118 71213"
-            }
-        ]
-    },
-    {
-        title: "TURUT MENJEMPUT",
+        title: "TURUT MENGUNDANG",
         icon: "user",
         data: [
+            {
+                label: "Hj. Abu Bakar Bin Mahabot",
+                value: ""
+            },
             {
                 label: "Hjh. Zubaidah Binti Hj. Abdul Halim",
                 value: ""
             },
 
         ]
-    }
+    },
+    {
+        title: "UNTUK DIHUBUNGI",
+        icon: "phone",
+        data: [
+            {
+                isFullWidth : true,
+                label: "En. Ghanisma (Bapa)",
+                value: "014 363 4169"
+            },
+            {
+                isFullWidth : true,
+                label: "Diyana (Adik)",
+                value: "014 966 4856"
+            }
+        ]
+    },
+  
 ];
 export const Map = {
     locationTitle: "NTC - NUBE TRAINING<br>CENTER AND HOTEL",
